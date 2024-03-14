@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- The doctype declaration above tells the web browser about the document type and version of HTML. -->
+<!-- I did some more ChatGPT things, but in a much more responsible way
+https://chat.openai.com/share/7471a367-112d-49a7-a938-42cee9af0dde -->
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("jazz.jpeg");
+        background-size: 35%;
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 100vh; /* Ensures the background covers the entire viewport */
+        box-shadow: #040404;
+        border: #1af35f;
+      }
+    </style>
+     <style>
+      div {
+      width: 210px;
+      height: 200px;
+      background-color: #28b1bb;
+      box-shadow: 5px 5px 10px #040404;
+      border: 2px solid #1af35f;
+    }
+     </style>
+     <style>
+      body{
+        background-color: pink;
+      }
+     </style>
+  </style>
+    <style>
+      .left-container {
+        width: 60%; /* Adjust the width as needed */
+        float: left; /* Float the container to the left */
+      }
+
+      /* Style the text within the left container */
+      .left-container p {
+        text-align: left; /* Align text to the left */
+      }
+    </style>
+    <!-- The head section contains meta information, scripts, and links to external resources. -->
+    <title>Auto-Licker</title>
+    <!-- The title tag sets the title of the web page as it appears in the browser tab. -->
+
+    <!-- This script tag links to the WebMidi.js library, enabling MIDI functionality in the web browser. -->
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js"></script>
+
+    <!-- This script tag links to the external JavaScript file that contains the logic for handling MIDI devices. -->
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <!-- The body section contains the content of the web page. -->
+    <h1>Play the Lick (So Killin!)</h1>
+    <!-- An h1 header that provides a title or a brief description of the page's purpose. -->
+<div>
+  <h2>Max Fuster</h2>
+</div>
+    <div>
+      <!-- A division or a section in an HTML document, used here to group the input device selector. -->
+      <label for="dropdown-ins">Select a MIDI Input:</label>
+      <!-- The label tag defines a label for the select element below. The 'for' attribute specifies which form element the label is bound to. -->
+      <select id="dropdown-ins">
+        <!-- The select tag represents a drop-down list. The id attribute is used to identify the element in CSS and JavaScript. -->
+        <!-- Options for the drop-down list are dynamically added through the script.js file. -->
+      </select>
+    </div>
+
+    <div>
+      <!-- Another division for grouping the output device selector. -->
+      <label for="dropdown-outs">Select a MIDI Output:</label>
+      <!-- Similar to the input label, this defines a label for the MIDI output selector. -->
+      <select id="dropdown-outs">
+        <!-- This select element is for choosing a MIDI output device. -->
+        <!-- Like the input selector, options are added dynamically via script.js. -->
+      </select>
+    </div>
+    <h2>
+      <label>Tempo:</label>
+      <input type="number" id="tempoBox" min="1" max="300" value="120" />
+    </h2>
+    <h3>
+      <div class="left-container">
+        The Lick" is a short musical phrase that has become a widely recognized
+        and often parodied motif in the jazz and popular music communities.
+        Initially popularized in the jazz genre, "The Lick" is characterized by
+        its distinctive sequence of notes, often played as a rapid, chromatic
+        scalar run or arpeggio. It has become a sort of inside joke among
+        musicians, frequently inserted as a playful embellishment or as a
+        tongue-in-cheek nod to its pervasive presence in jazz improvisation.
+        Despite its seemingly simple structure, "The Lick" has found its way
+        into a vast array of musical contexts, transcending genre boundaries and
+        becoming a shared cultural reference point among musicians and
+        aficionados alike. Its ubiquity has led to humorous memes, videos, and
+        discussions online, cementing its status as a beloved and enduring
+        musical meme within the global music community.
+      </div>
+    </h3>
+    <div>
+    
+    </div>
+  
+</html>
